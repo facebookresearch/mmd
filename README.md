@@ -5,7 +5,7 @@ This repository hosts two model diagnosis tools that support understanding the i
 
 ## MMD
 
-We developed a technique, *MMD* ([rule_inductio](/rule_induction)), that systematically discovers rules that characterize a subset of the input space of a machine learning model where the model is more likely to mispredict.
+We developed a technique, *MMD* ([rule_induction](/rule_induction)), that systematically discovers rules that characterize a subset of the input space of a machine learning model where the model is more likely to mispredict.
 
 This work has been published at the International Conference on Foundations in Software Engineering (FSE'21): J. Cito, I. Dillig, S. Kim, V. Murali, S. Chandra, [Explaining Mispredictions of Machine Learning Models using Rule Induction](https://github.com/facebookresearch/mmd/blob/main/paper/FSE21-ML-Misprediction-Preprint.pdf).
 
