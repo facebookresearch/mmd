@@ -1,8 +1,13 @@
-# MMD: Machine Learning Misprediction Diagnoser
+# MMD: Machine Learning Model Diagnosis and Counterfactual Explanatins for Models of Code
 
-Machine learning models often mispredict, and it is hard to tell when and why. We developed a technique, *MMD*, that systematically discovers rules that characterize a subset of the input space of a machine learning model where the model is more likely to mispredict.
+Machine learning models often mispredict, and it is hard to tell when and why. 
+This repository hosts two model diagnosis tools that support understanding the inner working of black-box models.
 
-Our work has been published at the International Conference on Foundations in Software Engineering (FSE'21): J. Cito, I. Dillig, S. Kim, V. Murali, S. Chandra, [Explaining Mispredictions of Machine Learning Models using Rule Induction](https://github.com/facebookresearch/mmd/blob/main/paper/FSE21-ML-Misprediction-Preprint.pdf).
+## MMD
+
+We developed a technique, *MMD* ([rule_inductio](/rule_induction)), that systematically discovers rules that characterize a subset of the input space of a machine learning model where the model is more likely to mispredict.
+
+This work has been published at the International Conference on Foundations in Software Engineering (FSE'21): J. Cito, I. Dillig, S. Kim, V. Murali, S. Chandra, [Explaining Mispredictions of Machine Learning Models using Rule Induction](https://github.com/facebookresearch/mmd/blob/main/paper/FSE21-ML-Misprediction-Preprint.pdf).
 
 ```bibtex
 @inproceedings{explaining_mispredictions:21,
@@ -14,6 +19,26 @@ Our work has been published at the International Conference on Foundations in So
 }
 ```
 
+## Counterfactual Explanations for Models of Code
+
+Counterfactual explanations ([counterfactuals](/counterfactuals)) constitute minimal changes to the input space under which the model
+“changes its mind". The contrast between original input and perturbed input is considered an explanation.
+
+This work has been published at the International Conference on Software Engineering (ICSE'22), Software Engineering in Practice: J. Cito, I. Dillig, V. Murali, S. Chandra, [Counterfactual Explanations for Models of Code](https://arxiv.org/pdf/2111.05711.pdf).
+
+```bibtex
+@inproceedings{code_counterfactuals:22,
+  title={Counterfactual Explanations for Models of Code},
+  author={Cito, J{\"u}rgen and Dillig, Isil and Murali, Vijayaraghavan and Chandra, Satish},
+booktitle = {44th {IEEE/ACM} International Conference on Software Engineering:
+               Software Engineering in Practice, {ICSE} {(SEIP)} 2022, Madrid, Spain,
+               May 25-27, 2022},
+  year={2022}
+}
+```
+
+
+
 ## Requirements
 
 * Python 3.8
@@ -21,4 +46,4 @@ Our work has been published at the International Conference on Foundations in So
 
 ## License
 
-MMD is CC-BY-NC 4.0 (Attr Non-Commercial Inter.) (e.g., FAIR) licensed, as found in the LICENSE file.
+Both projects are CC-BY-NC 4.0 (Attr Non-Commercial Inter.) (e.g., FAIR) licensed, as found in the LICENSE file.
